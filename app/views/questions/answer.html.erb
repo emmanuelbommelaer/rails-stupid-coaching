@@ -1,7 +1,13 @@
-<p><%= @question %></p>
-<p>-You</p>
-<br>
-<p><%= @answer %></p>
-<p>-Your coach</p>
-
-<%= link_to "Ask another question", '/' %>
+<div class="m-3">
+  <blockquote class="blockquote">
+    <p><%= @question %></p>
+    <p class="fst-italic">–You</p>
+  </blockquote>
+</div>
+<div class="m-3 border-left">
+  <blockquote class="blockquote">
+    <p><%= @answer %></p>
+    <p class="fst-italic">–Your coach</p>
+    <p class="mt-4"><%= link_to "Ask another question", '/' %></p>
+  </blockquote>
+</div>
